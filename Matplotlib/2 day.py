@@ -30,6 +30,7 @@ def main():
     Y2 = (1 - X / float(n)) * np.random.uniform(0.5, 1.0, n)
 
     plt.bar(X, +Y1, facecolor='#9999ff', edgecolor='white')
+    plt.bar(X, -Y2, facecolor='#9999ff', edgecolor='white')
 
     plt.show()
 
