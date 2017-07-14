@@ -1,7 +1,7 @@
 # encoding = utf-8
 # Integral
 import numpy as np
-from scipy.integrate import quad, dblquad, nquad
+from scipy.integrate import quad, dblquad, nquad  # 引入积分模块
 
 
 def main():
