@@ -1,5 +1,5 @@
 # encoding=utf-8
-# Interpolation
+# Interpolation 插值
 
 from pylab import *
 from scipy.interpolate import interp1d
@@ -16,7 +16,6 @@ def main():
     plot(x, y, 'r')
     plot(x_new, y_new, 'k')
     show()
-
 
 
 if __name__ == '__main__':
