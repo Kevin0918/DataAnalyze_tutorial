@@ -1,7 +1,7 @@
 # encoding = utf-8
-# optimizer 优化
+# optimizer 线性规划问题（优化）
 import numpy as np
-from scipy.optimize import minimize  # 计算最小值
+from scipy.optimize import minimize  # 计算无约束多变量函数的最小化
 
 
 def main():
@@ -9,7 +9,8 @@ def main():
         return sum(100.0 * (x[1:] - x[:-1]) ** 2.0 + (1 - x[:-1]) ** 2.0)
 
     x0 = np.array([1.3, 0.7, 0.8, 1.9, 1.2])
-    res = minimize(rosen, x0, method="nelder-mead", options={"xtol": 1e-8, "disp": True})
+    res = minimize(rosen, x0, method="nelder-mead", options={"xtol": 1e-8, "disp": True})  # nelder-mead即为单纯形法
+
     print("ROSE MINI:", res.x)
 
     # def func(x):
