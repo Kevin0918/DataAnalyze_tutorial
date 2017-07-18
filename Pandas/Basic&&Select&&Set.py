@@ -49,6 +49,5 @@ def main():
     df2[df2 > 0] = -df2
     print(df2)
 
-
 if __name__ == '__main__':
     main()
